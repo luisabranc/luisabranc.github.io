@@ -1,3 +1,12 @@
+@keyframes anim{
+    0%{
+        letter-spacing:normal;
+    }
+    100%{
+        letter-spacing:0.5em;
+    }
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -40,6 +49,9 @@ header #branding{
 }
 header #branding h1{
     margin: 0;
+}
+header #branding h1:hover{
+    animation: anim 1s 2 alternate cubic-bezier(.5,-0.7,.45,1);
 }
 header nav{
     float: right;
